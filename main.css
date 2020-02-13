@@ -1,0 +1,64 @@
+/*-----Root Element Size-----*/
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+
+/*-----Nav Bar-----*/
+#navBar {
+    background-color: #efefef;
+    height: 4em;
+    width:100%;
+
+}
+
+/*-----Profile Picture-----*/
+#profPic {
+    background-color: #F2958D;
+    height:60%;
+    width:50%;
+    float: left;
+
+}
+
+/*-----About Me "Form" Profile-----*/
+#lexProf {
+    background-color: #efefef;
+    height:60%;
+    width:50%;
+    position: inline-block;
+    float: right;
+
+}
+
+/*-----Random Quiz Generator-----*/
+#magicGen {
+    background-color: #F25252;
+    margin: 1% solid white;
+    height:60%;
+    width:100%;
+    position: block;
+    float: left;
+
+}
+
+/*-----Featured Art-----*/
+.myArt {
+    background-color: white;
+    height:60%;
+    width:50%;
+    float: left;
+
+}
+
+/*-----Contact Form-----*/
+.contactMe {
+    background-color:#EFEFEF;
+    height:60%;
+    width:50%;
+    display: inline-block;
+    float: right;
+
+}
