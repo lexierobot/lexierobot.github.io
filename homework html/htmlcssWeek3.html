@@ -20,18 +20,18 @@
             height: 5em;
             padding: 2em;
             text-align: center;
-            }
+        }
       div { background-color:rgb(228, 218, 255)
-           }
+        }
       a { font-family: 'Fondamento', cursive;
         }
       h2 {color: hotpink;
           font-family: 'Oleo Script Swash Caps', cursive;
           font-size: 400%;
-          }
+        }
       p {color: #4f4569;
          font-family: Georgia, 'Times New Roman', Times, serif;
-         }
+        }
       #mainHead {
                 color: rgb(255, 0, 0);
                 height: 3rem;
@@ -42,7 +42,7 @@
                 background-color:ghostwhite;
                 text-align: center;
                 background-image: url(https://us.123rf.com/450wm/olgastocker/olgastocker1705/olgastocker170500007/77320582-vector-seamless-pattern-horizontal-thin-wavy-lines-subtle-monochrome-background-.jpg?ver=6);
-                }
+        }
       .article {
                 background-color:ghostwhite;
                 height: 60%;
@@ -51,29 +51,56 @@
                 line-height: 22px;
                 padding: 20px;
                 display: inline-block;
-                }
+        }
       ul {
-          height:200px;
-          width: 300px;
+          height:20%;
           background-color: pink;
-          }
+        }
       li {
           height: 50%;
           width: 40%;
-         }
+        }
       #aside {
              background: rgb(255, 223, 228);
              width: 40%;
              float: right;
              padding: 2%;
-            }
+        }
       #section {
                background: azure;
                width: 50%;
                height: 15em;
                float: left;
                padding: 2%;
-              }
+        }
+        table {
+            border-collapse: collapse;
+            border: 1px solid green;
+            width: 30em;
+        }
+        th {
+            background:yellowgreen;
+            text-align: left;
+        }
+        tr:nth-child(odd) {
+            background-color:rgb(232, 255, 218);
+        }
+        #tablePic {
+            height: 50%
+        }
+        #signUp {
+            width: 40%;
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            background-color:rgb(249, 224, 224);
+            border: 4px solid pink;
+            padding: 1em;
+        }
+        #signUpPic {
+            width: 100%;
+            display: block;
+            float: 
+        }
   </style>
 
  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
@@ -100,6 +127,74 @@
             <img src ="https://miro.medium.com/max/790/0*yt7Mwvdb8e08xxhk.jpg" alt="picture of Gollum">
             <img src ="" alt="hello! in handwritten style" />
         </div>
+        <br>
+        <br>
+
+    <table>
+        <caption>Lord Of the Rings Characters</caption>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Race</th>
+            <th>Also Called</th>
+        </tr>
+        <tr>
+            <td><img id ="tablePic" src= "https://pbs.twimg.com/profile_images/715520949056049152/X3zF-w9x_400x400.jpg" alt="Ian McKellen as Gandalf the White"/>
+            </td>
+            <td>Gandalf</td>
+            <td>2019</td>
+            <td>Maia</td>
+            <td>Mithrandir</td>
+        </tr>
+        <tr>
+            <td><img id ="tablePic" src= "https://pbs.twimg.com/profile_images/593890351854686208/BFfqCMtk_400x400.png" alt="Elijah Wood as Frodo"/>
+            </td>
+            <td>Frodo</td>
+            <td>50</td>
+            <td>Hobbit</td>
+            <td>Underhill</td>
+        </tr> <tr>
+            <td><img id ="tablePic" src= "https://pbs.twimg.com/profile_images/2902901162/f202074387718b098c010a1094a2aa69.jpeg" alt="Viggo Mortensen as Aragorn"/>
+            </td>
+            <td>Aragorn</td>
+            <td>87</td>
+            <td>Dunedain</td>
+            <td>Longshanks</td>
+        </tr> 
+        <tfoot>
+            <td><img id ="tablePic" src= "https://pbs.twimg.com/profile_images/724556438241181696/0tQ-pyo_.jpg" alt="Andy Serkis as Gollum"/>
+            </td>
+            <td>Gollum</td>
+            <td>589</td>
+            <td>Stoor Hobbit*</td>
+            <td>Smeagol</td>
+        </tfoot>
+    </table>
+
+    <form id ="signUp">
+        <img id="signUpPic" src="https://i.pinimg.com/originals/0e/4f/29/0e4f29b42ce84a6526c2b11f4d5398b6.jpg" alt="Sign Up for Our Email List for 10% OFF your first order"/>
+        <h3>Get 10% Off Your First Order</h2>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" value="Jane"><br><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+        <label>Email:</label><br>
+        <input><br><br>
+        <label>Notify me of:</label><br><br>
+        <input type="radio" id="salesSignUp">
+        <label for="salesSignUp" value="sales">Sales</label>
+        <br>
+        <input type="radio" id="newProdSignUp">
+        <label for="salesSignUp" value="newProducts">New Products</label>
+        <br>
+        <input type="radio" id="eventSignUp">
+        <label for="salesSignUp" value="events">Events</label>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    
 
     <div id="lexProf">
         <p>This is going to be a box that contains a "form style" profile of me. I want to include hand-written elements, but not sure if it's best to just do a JPEG?!</p>
