@@ -16,9 +16,8 @@ body {
 
 /*-----Profile Picture-----*/
 #profPic {
-    background-color: #F2958D;
-    height:60%;
-    width:50%;
+    height:50%;
+    width:40%;
     float: left;
 
 }
@@ -26,7 +25,9 @@ body {
 /*-----About Me "Form" Profile-----*/
 #lexProf {
     background-color: #efefef;
-    height:60%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    padding: 2rem;
+    height:100%;
     width:50%;
     position: inline-block;
     float: right;
