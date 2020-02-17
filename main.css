@@ -16,9 +16,6 @@ body {
 
 /*-----Profile Picture-----*/
 #profPic {
-    height:50%;
-    width:40%;
-    float: left;
 
 }
 
@@ -28,10 +25,15 @@ body {
     font-family: Georgia, Times, 'Times New Roman', serif;
     padding: 2rem;
     height:100%;
-    width:50%;
+    width:100%;
     position: inline-block;
-    float: right;
 
+}
+
+#boxLine {
+    background-color: white;
+    position: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*-----Random Quiz Generator-----*/
