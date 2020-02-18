@@ -6,6 +6,17 @@ body {
     height: 100%;
 }
 
+/* p {
+    padding: 1.5em;
+} */
+
+h1 {
+    font-family: phoreuscherokee, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
 /*-----Nav Bar-----*/
 #navBar {
     background-color: #efefef;
@@ -64,4 +75,36 @@ body {
     display: inline-block;
     float: right;
 
+}
+
+/* About Me Page */
+
+#aboutPar {
+    padding: 2em;
+    margin: 1rem;
+    width: 98%;
+    background-color: #efefef;
+}
+
+#linkedIn {
+    width: 100px;
+    height: 40px;
+    padding: .25em;
+    background-color: pink;
+    border: none;
+    color:rgb(21, 21, 21);
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+#insta {
+    height: 40px;
+    width: 100px;
+    background-color: hotpink;
+    border: none;
+    padding: .25em;
+    color: white;
+    text-align: center;
+    display: inline-block;
 }
