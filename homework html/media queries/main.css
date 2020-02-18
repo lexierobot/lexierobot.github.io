@@ -1,0 +1,42 @@
+.navBar {
+    background: #efefef;
+    padding: 1em;
+}
+
+.navBar a {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#main {
+    width: 75%;
+    background: darkorchid;
+    float: left;
+}
+
+#sidebar {
+    width: 25%;
+    background: pink;
+    float: right;
+}
+
+#sidebar ul {
+    text-align: left;
+}
+
+#sidepic {
+    width: 100%;
+}
+
+#footer {
+    background: azure;
+}
+
+/* Queries */
+@media screen and (max-width: 600px) {
+    #navBar {
+        float: none;
+        width: 100%;
+    }
+} 

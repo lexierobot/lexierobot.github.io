@@ -137,5 +137,12 @@ div p {
         #signUpPic {
             width: 100%;
             display: block;
-            float: 
+            float: left;
         }
+
+/* Start Media Query Homework */
+@media (max-width: 500px) {
+    
+}
+
+/* End Media Query Homework */
