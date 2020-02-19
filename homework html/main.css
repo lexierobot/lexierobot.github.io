@@ -140,6 +140,36 @@ div p {
             float: left;
         }
 
+/* Shiv Homework Hover and Button Changes Color */
+        #colorBtn {
+            height: 100px;
+            width: 400px;
+            background-color: steelblue;
+            color: white;
+            font-size: 40px;
+        }
+
+        #colorBtn:hover {
+            background-color: purple;
+        }
+        
+        /* CSS Button Animation */
+        #myBtn {
+            height: 100px;
+            width: 400px;
+            background-color: orange;
+            color: white;
+            font-size: 30px;
+            animation-name: seasons;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes seasons {
+            from {background-color: orange;}
+            to {background-color: palevioletred;}
+        }
+
 /* Start Media Query Homework */
 @media (max-width: 500px) {
     

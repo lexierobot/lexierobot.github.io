@@ -51,6 +51,8 @@
     margin: 0 auto;
 }
 
+
+
 /* Media Queries */
 @media screen and (max-width: 600px) {
     .navBar a {
