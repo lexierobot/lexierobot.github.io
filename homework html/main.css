@@ -1,3 +1,29 @@
+/* Start Exercise Shiv Homework #4 - Animation */
+#animateMe {
+    height: 50px;
+    width: 200px;
+    background-color: #F7A9A6;
+    font-size: 20px;
+    position: relative;
+    animation-name: cmiyc;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#animateMe p {
+    color: white;
+    padding: .3em;
+}
+
+@keyframes cmiyc {
+    0% {background-color:steelblue; left: 0px; top: 0px;}
+    20% {background-color: steelblue; left: 40px; top: -40px;}
+    40% {background-color: red; left: 20px; top: -80px;}
+    60% {background-color: plum; left: 700px; top: -80px;}
+    80% {background-color: blue; left: 700px; top: 10px;}
+    100% {background-color: greenyellow; left: 0px; top: 0px;}
+}
+
 /* Start BEM Selectors & Media Queries Homework */
 .block {
     width: 95%;
@@ -48,28 +74,34 @@ div p {
     font-family: sans-serif;
     color: black;
 }
-
 /* End BEM Selectors & Media Queries Homework */
-    #profPic {
+    
+#profPic {
           background-color: white;
       }
+
       nav { background: linear-gradient(90deg, rgba(238,174,202,1)         0%, rgba(148,187,233,1) 48%, rgba(148,187,233,0) 100%);;
             color: white;
-            height: 5em;
-            padding: 2em;
+            height: 1em;
+            padding: 1em;
             text-align: center;
         }
+
       div { background-color:rgb(228, 218, 255)
         }
+
       a { font-family: 'Fondamento', cursive;
         }
+
       h2 {color: hotpink;
           font-family: 'Oleo Script Swash Caps', cursive;
           font-size: 400%;
         }
+
       p {color: #4f4569;
          font-family: Georgia, 'Times New Roman', Times, serif;
         }
+
       #mainHead {
                 color: rgb(255, 0, 0);
                 height: 3rem;
@@ -81,6 +113,7 @@ div p {
                 text-align: center;
                 background-image: url(https://us.123rf.com/450wm/olgastocker/olgastocker1705/olgastocker170500007/77320582-vector-seamless-pattern-horizontal-thin-wavy-lines-subtle-monochrome-background-.jpg?ver=6);
         }
+
       .article {
                 background-color:ghostwhite;
                 height: 60%;
@@ -90,20 +123,24 @@ div p {
                 padding: 20px;
                 display: inline-block;
         }
+
       ul {
           height:20%;
           background-color: pink;
         }
+
       li {
           height: 50%;
           width: 40%;
         }
+
       #aside {
              background: rgb(255, 223, 228);
              width: 40%;
              float: right;
              padding: 2%;
         }
+
       #section {
                background: azure;
                width: 50%;
@@ -111,21 +148,26 @@ div p {
                float: left;
                padding: 2%;
         }
+
         table {
             border-collapse: collapse;
             border: 1px solid green;
             width: 30em;
         }
+
         th {
             background:yellowgreen;
             text-align: left;
         }
+
         tr:nth-child(odd) {
             background-color:rgb(232, 255, 218);
         }
+
         #tablePic {
             height: 50%
         }
+
         #signUp {
             width: 40%;
             font-family: Roboto, sans-serif;
@@ -134,6 +176,7 @@ div p {
             border: 4px solid pink;
             padding: 1em;
         }
+
         #signUpPic {
             width: 100%;
             display: block;
