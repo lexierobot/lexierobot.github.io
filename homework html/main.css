@@ -147,12 +147,13 @@ div p {
             background-color: steelblue;
             color: white;
             font-size: 40px;
+            transition: 0.9s;
         }
 
         #colorBtn:hover {
             background-color: purple;
         }
-        
+
         /* CSS Button Animation */
         #myBtn {
             height: 100px;
