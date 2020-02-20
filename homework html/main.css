@@ -1,8 +1,10 @@
+/* Exercise Countdown - Lexie's Bday Timer */
+
 /* Start Exercise Shiv Homework #4 - Animation */
 #animateMe {
     height: 50px;
     width: 200px;
-    background-color: #F7A9A6;
+    background-color: steelblue;
     font-size: 20px;
     position: relative;
     animation-name: cmiyc;
