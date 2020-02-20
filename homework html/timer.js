@@ -1,8 +1,6 @@
 //Counting down to July 9 2020
 
 //declare var myDate(countdown in html) that I'm counting down to
-// var countdown = new Date('July 9, 2020 00:00:00').getTime();
-
 
 //140 Days until July 9
 
@@ -16,7 +14,15 @@ var timer = setInterval(function(){
     }
 })
 
-
-//Now I need to display that timer with days, hours, minutes, seconds as a countdown.
+//Now INSTEAD of this I need to display that timer with days, hours, minutes, seconds as a countdown.
 
 //make the Stop Time button display another message.....
+
+var countdown = new Date('July 9, 2020 00:00:00').getTime();
+var bdayTimer = setInterval(function(){
+
+    document.getElementById("countdown").innerHTML = "Time's up!"
+    //
+})
+//use clearInterval() to stop the timer
+// if the time has run out, display "Too late, lexie's 30"
