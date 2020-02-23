@@ -4,12 +4,18 @@
 <head>
   <meta charset="utf-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   <title name="top">Lexie Helwig Portfolio</title>
   <meta name="web and graphic design portfolio" content="web, digital, and print design projects">
   <meta name="Lexie Helwig" content="Porfolio Site">
 
-  <!--Adobe Font-->
-  <link rel="stylesheet" href="https://use.typekit.net/hti1ogi.css">
+  <!-- HTML5 Shiv  -->
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> 
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
 
  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
  <link rel="stylesheet" href="main.css">
@@ -18,54 +24,25 @@
 
 <body>
 
-    <nav id="navBar">
-        <img src="" alt="logo" />
-        <a href="index.html">Main</a>
-        <a href=#>Resume</a>
-        <a href="pages/about.html" target="_blank">About Me</a>
-        <a href=#>Design</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
+    <!-- I cannot get this to float with the text on the right and the navbar (background color) extending all the way across the top of the screen -->
+    <nav class="navBar">
+        <a href="index.html"><img src="" alt="logo"/></a>
+        <ul>
+            <li><a class ="active" href="index.html">HOME</a></li>
+            <li><a href="pages/about.html" target="_blank">ABOUT ME</a></li>
+            <li><a href=#>RESUME</a></li>
+            <li><a href=#>PORTFOLIO</a></li>
+            <li><a href="https://instagram.com" target="_blank">INSTAGRAM</a></li>
+        </ul>
     </nav>
 
-    <header>
+    <!-- <header>
         <h1 id='mainHead'>Lexie's Portfolio Site</h1>
-    </header>
+    </header> -->
 
     <div id="profPic">
-        <img src ="images/lexie_profile_pic.jpeg" alt="Lexie profile picture">
-        <img src ="" alt="hello! in handwritten style or logo" />
+        <img src="images/lexie.jpg" alt= "picture of Lexie"/>
     </div>
-
-    <div id="lexProf">
-        <div id="boxLine">
-            <p>Random Fact</p>
-        </div>
-        <div id="boxLine">
-            <p>Interesting Fact</p>
-        </div>
-        <div id="boxLine">
-            <p>A Long Fact or Quote</p>
-        </div>
-        <div id="boxLine">
-            <p>Fun Fact</p>
-        </div>
-        <div id="boxLine">
-            <p>Not a Fact</p>
-        </div>
-    </div>
-
-    <div id="magicGen">
-        <p>This is going to be some kind of magical button generator or quiz thing that's interactive and fun made using javascript.</p>
-    </div>
-
-    <div class="myArt">
-        <p>Display some recent design work here?</p>
-    </div>
-
-    <div class="contactMe">
-        <p>This is going to be a right-floating contact form.</p>
-    </div>
-
 
     <footer>
     </footer>

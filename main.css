@@ -1,3 +1,8 @@
+/*Google Fonts
+font-family: 'Playfair Display', ;
+font-family: 'Roboto Condensed', ;
+font-family: 'Roboto', ;*/
+
 /*-----Root Element Size-----*/
 html {
     height: 100%;
@@ -6,105 +11,71 @@ body {
     height: 100%;
 }
 
-/* p {
+p {
     padding: 1.5em;
-} */
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
 
 h1 {
-    font-family: phoreuscherokee, serif;
+    font-family: Playfair-Display, Times, serif;
     font-weight: 300;
     font-style: normal;
     font-size: 2.5rem;
 }
 
 /*-----Nav Bar-----*/
-#navBar {
-    background-color: #efefef;
-    height: 4em;
-    width:100%;
-
+nav {
+    display: block;
 }
 
-/*-----Profile Picture-----*/
-#profPic {
-
-}
-
-/*-----About Me "Form" Profile-----*/
-#lexProf {
-    background-color: #efefef;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    padding: 2rem;
-    height:100%;
-    width:100%;
-    position: inline-block;
-
-}
-
-#boxLine {
-    background-color: white;
-    position: inline-block;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/*-----Random Quiz Generator-----*/
-#magicGen {
-    background-color: #F25252;
-    margin: 1% solid white;
-    height:60%;
-    width:100%;
-    position: block;
-    float: left;
-
-}
-
-/*-----Featured Art-----*/
-.myArt {
-    background-color: white;
-    height:60%;
-    width:50%;
-    float: left;
-
-}
-
-/*-----Contact Form-----*/
-.contactMe {
-    background-color:#EFEFEF;
-    height:60%;
-    width:50%;
-    display: inline-block;
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f7a9a6;
     float: right;
-
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
 }
 
-/* About Me Page */
-
-#aboutPar {
-    padding: 2em;
-    margin: 1rem;
-    width: 98%;
-    background-color: #efefef;
+.navBar li {
+    float: left;
 }
 
-#linkedIn {
-    width: 100px;
-    height: 40px;
-    padding: .25em;
-    background-color: pink;
-    border: none;
-    color:rgb(21, 21, 21);
+.navBar li a {
+    display: block;
+    color: #EEEADE;
+    text-align: center;
+    padding: 1em 1em;
     text-decoration: none;
-    display: inline-block;
-    text-align: center;
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 18px;
 }
 
-#insta {
-    height: 40px;
-    width: 100px;
-    background-color: hotpink;
-    border: none;
-    padding: .25em;
-    color: white;
-    text-align: center;
-    display: inline-block;
+.navBar li a:hover {
+    color: #F7A9A6;
+    background-color: #EEEADE;
+    /* Wanted to make a wavy line underneath, but it's glitching and splitting the line when hovering */
+    /* text-decoration-style: wavy;
+    text-decoration-line: underline;
+    text-decoration-color: #EEEADE; */
+}
+
+.active {
+    /* color:#F7A9A6;
+    background: #EEEADE; */
+    /* text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #EEEADE; */
+}
+
+/* Profile Picture */
+
+#profPic img {
+    display: block;
+    height: auto;
+    width: 35%;
+    border-radius: 50%;
 }
