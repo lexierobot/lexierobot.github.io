@@ -99,6 +99,6 @@ nav a:hover::before {
 #profPic img {
     display: block;
     height: auto;
-    width: 35%;
+    width: 25%;
     border-radius: 50%;
 }
