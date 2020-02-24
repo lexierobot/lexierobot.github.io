@@ -12,7 +12,6 @@ body {
 }
 
 p {
-    padding: 1.5em;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
@@ -20,59 +19,119 @@ h1 {
     font-family: Playfair-Display, Times, serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    color: #3F4B54;
 }
 
-/* -----Nav Bar----- */
+/* Flexbox Navbar */
 .container {
-    width: 80%;
-    margin: 0 auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f7a9a6;
+}
+
+.container li, a, button {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    color: #EEEADE;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 header {
-    background: #F7A9A6;
-}
-
-/* Clear Fix - how is this working? Set up as a class? */
-header::after {
-    content: "";
-    display: table;
-    clear: both;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px, 10%;
 }
 
 #headLogo {
-    float: left;
-    width: 50px;
-    padding: 10px 0;
+    width: 3em;
+    cursor: pointer;
+    margin-right: auto;
 }
 
-nav {
-    float: right;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
+.nav__links {
     list-style: none;
 }
 
-nav li {
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #3F4B54;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #3f4b54;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #EEEADE;
+    color: #3F4B54;
+}
+
+/* -----Nav Bar Not Responsive----- */
+/* .container {
+    width: 80%;
+    margin: 0 auto;
+} */
+
+/* header {
+    background: #F7A9A6;
+} */
+
+/* Clear Fix - how is this working? Set up as a class? */
+/* header::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+/* #headLogo {
+    float: left;
+    width: 50px;
+    padding: 10px 0;
+} */
+
+/* nav {
+    float: right;
+} */
+
+/* nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} */
+
+/* nav li {
     display: inline-block;
     margin-left: 20px;
     padding-top: 27px;
 
     position: relative;
-}
+} */
 
-nav a {
+/* nav a {
     color: #EEEADE;
     text-decoration: none;
     text-transform: uppercase;
     font-family: Roboto Condensed, sans-serif;
     font-size: 18px;
-}
+} */
 
-nav a::before {
+/* nav a::before {
     content: "";
     display: block;
     height: 5px;
@@ -82,16 +141,16 @@ nav a::before {
     position: absolute;
     top: 0;
     width: 0%;
-}
+} */
 
-nav a:hover::before {
+/* nav a:hover::before {
     width: 100%;
     transition: all ease-in-out 250ms;
-}
+} */
 
-.active {
+/* .active {
     color: #3F4B54
-}
+} */
 
 
 /* Profile Picture */
@@ -101,4 +160,37 @@ nav a:hover::before {
     height: auto;
     width: 25%;
     border-radius: 50%;
+    margin-top: 80px;
+    /* margin-left: 200px; */
+}
+
+/* Main Greeting*/
+
+/* #mainGreeting {
+    display: block;
+    width: 40%;
+    background-color: #EEEADE;
+    padding: 1em;
+    margin-left: 250px;
+    margin-top: -120px;
+}
+
+#mainHeading {
+    display: block;
+    margin-left: 200px;
+
+} */
+
+/* About Me Page Text */
+
+#aboutPar {
+    background-color: #EEEADE;
+    color: #3F4B54;
+    padding: 2em;
+}
+
+.social {
+    background-color: #D19064;
+    padding: 1em;
+    border-radius: 4px;
 }
