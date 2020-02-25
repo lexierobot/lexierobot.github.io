@@ -1,15 +1,18 @@
 var timer;
 
 function one() {
-    timer = setTimeout(function(){
-        console.log(1);}, 8000);
+    return new Promise(function(resolve, reject){
+        setTimeout(function(){
+            console.log('hello');
+        resolve()}, 10000);
+    });
+    
 }
 
 function two() {
     timer = setTimeout(function() {
-        console.log(2);}, 3000);
+        console.log('promise');}, 1000);
     }
 
-    one();
-    two();
+    one().then(two);
   
