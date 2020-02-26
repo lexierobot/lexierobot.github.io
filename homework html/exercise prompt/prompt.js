@@ -17,7 +17,12 @@ readline.question(`Which Hogwarts House are you in?`, (house) => {
         console.log(`lol ${house}'s r total nerdz.`)
   } else {
         console.log('That\'s not a Hogwarts house.');
+  }
         readline.close()
-      }
-})
+      })
+});
+
+readline.on('close', function() {
+      console.log('\nLater Witches!');
+      process.exit(0);
 });
