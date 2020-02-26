@@ -6,7 +6,6 @@ const readline = require('readline').createInterface({
 readline.question(`What's your favorite color?`, (color) => {
   console.log(`Crazy! ${color} is my favorite color, too!`)
 
-readline.prompt()
 readline.question(`Which Hogwarts House are you in?`, (house) => {
   if(house == 'gryffindor' || house == 'Gryffindor'){
         console.log(`Ah, ${house}! You must be brave at heart.`)
@@ -17,7 +16,7 @@ readline.question(`Which Hogwarts House are you in?`, (house) => {
   } else if (house == 'ravenclaw' || house == 'Ravenclaw'){
         console.log(`lol ${house}'s r total nerdz.`)
   } else {
-        console.log('That\'s not a Hogwarts house.')
+        console.log('That\'s not a Hogwarts house.');
         readline.close()
       }
 })
