@@ -2,41 +2,69 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-    <title name="top">Lexie Helwig Portfolio</title>
-    <meta name="web and graphic design portfolio" content="web, digital, and print design projects">
-    <meta name="Lexie Helwig" content="Porfolio Site">
-  
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
-  
-   <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
-   <link rel="stylesheet" href="/main.css">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title name="top">Lexie Helwig Portfolio</title>
+  <meta name="web and graphic design portfolio" content="web, digital, and print design projects">
+  <meta name="Lexie Helwig" content="Porfolio Site">
+
+  <!-- HTML5 Shiv  -->
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> 
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+ <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+ <link rel="stylesheet" href="/main.css">
+
 </head>
 
-<header>
-    <div class="container">
-    <!-- Logo -->
-    <a href="index.html"><img id= "headLogo" src="/images/lexiehelwig_logo.png" alt="logo"/></a>
-    
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a class ="active" href="about.html" target="_blank">About Me</a></li>
-            <li><a href=#>Resume</a></li>
-            <li><a href=#>Portfolio</a></li>
-            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-        </ul>
-    </nav>
-    </div>
-</header>
+
 
 <body>
+
+    <header>
+        <nav class="navbar sticky-top navbar-expand-sm">
+            <a href="index.html" class="navbar-brand"><img src="/images/lexiehelwig_logo.png" alt="logo"/></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=# class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=# class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Connect
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Contact Me</a>
+                          <a class="dropdown-item" href="#">Instagram</a>
+                          <a class="dropdown-item" href="#">LinkedIn</a>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+
     <div id="aboutPar">
     <h1>Hello!</h1>
         <p>I’m Lexie, a graphic designer and marketer located in the Augusta, GA area. I’m currently enrolled in a local bootcamp learning full-stack web development.
@@ -69,6 +97,18 @@
 </footer>
 
 <script src=></script>
+
+<footer>
+    <script type="text/javascript" src="path/to/instafeed.min.js"></script>
+
+    <div id="instafeed"></div> 
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</footer>
+
 
 </body>
 </html>

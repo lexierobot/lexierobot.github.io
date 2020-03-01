@@ -4,13 +4,6 @@ font-family: 'Roboto Condensed', ;
 font-family: 'Roboto', ;*/
 
 /*-----Root Element Size-----*/
-html {
-    height: 100%;
-}
-body {
-    height: 100%;
-}
-
 p {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     line-height: 1.7em;
@@ -24,79 +17,56 @@ h1 {
     color: #3F4B54;
 }
 
-/* -----Nav Bar Not Responsive----- */
-.container {
-    width: 80%;
-    margin: 0 auto;
+h1:hover::before {
+    text-decoration: underline;
 }
 
-header {
-    background: #F7A9A6;
+/* Navbar Bootstrap */
+.navbar {
+    background-color: #F7A9A6;
+
 }
 
-/* Clear Fix - how is this working? Set up as a class? */
-header::after {
-    content: "";
-    display: table;
-    clear: both;
+.navbar-brand img {
+    height: 3em;
 }
 
-#headLogo {
-    float: left;
-    width: 50px;
-    padding: 10px 0;
-}
-
-nav {
-    float: right;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 20px;
-    padding-top: 27px;
-
-    position: relative;
-}
-
-nav a {
-    color: #EEEADE;
-    text-decoration: none;
-    text-transform: uppercase;
+.navbar a {
+    color: #eeeade;
     font-family: Roboto Condensed, sans-serif;
     font-size: 18px;
+    text-transform: uppercase;
 }
 
-nav a::before {
+.navbar a.active {
+    color: #3F4B54;
+
+}
+
+.navbar a:hover {
+    color: #3F4B54;
+}
+
+.navbar a:hover::before {
+    transition: all ease-in-out 1000ms;
+}
+
+.navbar-toggler {
+    background-color: #eeeade;
+}
+
+
+.navbar a::before {
     content: "";
     display: block;
     height: 5px;
-    width: 100%;
     background-color:#3F4B54;
-
     position: absolute;
     top: 0;
     width: 0%;
 }
 
-nav a:hover::before {
-    width: 100%;
-    transition: all ease-in-out 250ms;
-}
-
-.active {
-    color: #3F4B54
-}
-
-
 /* Profile Picture */
-
 #profPic img {
     display: block;
     height: auto;
@@ -107,7 +77,6 @@ nav a:hover::before {
 }
 
 /* Main Greeting*/
-
 #mainGreeting {
     display: block;
     width: 40%;
@@ -124,15 +93,8 @@ nav a:hover::before {
 }
 
 /* About Me Page Text */
-
 #aboutPar {
     background-color: #EEEADE;
     color: #3F4B54;
-    padding: 2em;
-}
-
-.social {
-    background-color: #D19064;
-    padding: 1em;
-    border-radius: 4px;
+    padding: 3rem;
 }
