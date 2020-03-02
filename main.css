@@ -13,7 +13,6 @@ h1 {
     font-family: Playfair-Display, Times, serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 3.5rem;
     color: #3F4B54;
 }
 
@@ -48,22 +47,7 @@ h1:hover::before {
 }
 
 .navbar a:hover::before {
-    transition: all ease-in-out 1000ms;
-}
-
-.navbar-toggler {
-    background-color: #eeeade;
-}
-
-
-.navbar a::before {
-    content: "";
-    display: block;
-    height: 5px;
-    background-color:#3F4B54;
-    position: absolute;
-    top: 0;
-    width: 0%;
+    /* transition: all ease-in-out 2000ms; */
 }
 
 /* Profile Picture */
@@ -86,10 +70,29 @@ h1:hover::before {
     margin-top: -120px;
 }
 
-#mainHeading {
-    display: block;
-    margin-left: 200px;
+/* About Container on Homepage*/
 
+.container.about {
+    background-color: #d19064;
+    color: #eeeade;
+}
+
+.container.container-fluid {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+
+.container.about .col {
+    column-count: 2;
+    column-gap: 40px;
+    column-fill: auto;
+    margin: 0;
+    padding: 4em;
+}
+
+h1 {
+    column-span: all;
 }
 
 /* About Me Page Text */
