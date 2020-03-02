@@ -3,6 +3,18 @@ font-family: 'Playfair Display', ;
 font-family: 'Roboto Condensed', ;
 font-family: 'Roboto', ;*/
 
+/* How to Override Bootstrap */
+:root {
+    --primary: #F7A9A6;
+    /* --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8); */
+}
+
+.container.something {
+    background: var(--primary);
+}
+
 /*-----Root Element Size-----*/
 p {
     font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -72,18 +84,22 @@ h1:hover::before {
 /* Profile Picture & Greeting */
 .container.container-fluid.greeting {
     padding: 4em;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .container.container-fluid.greeting img {
-    width: 35%;
+    flex: 1;
+    flex-basis: 40%;
 }
 
 .container.container-fluid.greeting p {
     background-color: #eeeade;
-    width: 100%;
-    height: 100%;
+    flex: 2;
     padding: 2em;
-    position: static;
+    flex-basis: 60%;
 }
 
 .btn.about {
@@ -105,6 +121,8 @@ h1:hover::before {
 .container.about {
     background-color: #d19064;
     color: #eeeade;
+    /* background-color: #eeeade;
+    color: #d19064; */
 
 }
 
