@@ -50,28 +50,22 @@ h1:hover::before {
     /* transition: all ease-in-out 2000ms; */
 }
 
-/* Profile Picture */
-#profPic img {
-    display: block;
-    height: auto;
-    width: 25%;
-    border-radius: 50%;
-    margin-top: 80px;
-    /* margin-left: 200px; */
+/* Profile Picture & Greeting */
+.container.container-fluid.greeting {
+    padding: 4em;
 }
 
-/* Main Greeting*/
-#mainGreeting {
-    display: block;
-    width: 40%;
-    background-color: #EEEADE;
-    padding: 1em;
-    margin-left: 250px;
-    margin-top: -120px;
+.container.container-fluid.greeting img {
+    width: 35%;
+}
+
+.container.container-fluid.greeting p {
+    background-color: #eeeade;
+    width: 100%;
+    padding: 2em;
 }
 
 /* About Container on Homepage*/
-
 .container.about {
     background-color: #d19064;
     color: #eeeade;
