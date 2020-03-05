@@ -6,14 +6,17 @@ font-family: 'Roboto', ;*/
 /* How to Override Bootstrap */
 :root {
     --primary: #F7A9A6;
+    --light: #eeeade;
+    --dark: #3f4b54;
+
     /* --dark: #333;
     --light: #fff;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8); */
 }
 
-.container.something {
+/* .container.something {
     background: var(--primary);
-}
+} */
 
 /*-----Root Element Size-----*/
 p {
@@ -96,6 +99,9 @@ h1:hover::before {
 }
 
 .container.container-fluid.greeting p {
+    display: grid;
+    /* grid-row: 2 / 3;
+    grid-column: 3 / 4; */
     background-color: #eeeade;
     flex: 2;
     padding: 2em;
@@ -126,13 +132,23 @@ h1:hover::before {
 
 }
 
-.container.container-fluid {
+.container.container-fluid.about {
     width: 100%;
     max-width: none;
     padding: 0;
+    margin: auto;
 }
 
 .container.about .col {
+    column-count: 2;
+    column-gap: 40px;
+    column-fill: auto;
+    margin: 0;
+    padding: 4em;
+}
+
+.container.about .col .p {
+    background-color: #d19064;
     column-count: 2;
     column-gap: 40px;
     column-fill: auto;
@@ -150,3 +166,4 @@ h1 {
     color: #3F4B54;
     padding: 3rem;
 }
+
