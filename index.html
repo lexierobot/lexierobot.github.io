@@ -1,129 +1,111 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexie Helwig</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <title name="top">Lexie Helwig Portfolio</title>
-  <meta name="web and graphic design portfolio" content="web, digital, and print design projects">
-  <meta name="Lexie Helwig" content="Porfolio Site">
-
-  <!-- HTML5 Shiv  -->
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> 
-
-  <!--Google Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
- <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
- <link rel="stylesheet" href="main.css">
-
- <!-- Fontawesome Icon -->
- <script src="https://kit.fontawesome.com/ce299d731e.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
-    <header>
-        <nav class="navbar sticky-top navbar-expand-sm">
-            <a href="index.html" class="navbar-brand"><img src="images/lexiehelwig_logo.png" alt="logo"/></a>
-
-            <!-- Hamburger Icon -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars hamburger"></i>
-                </span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="pages/about.html" class="nav-link">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href=# class="nav-link">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://drive.google.com/open?id=1AAFWEeTnm8xkVfYKPIgg58rTs5P_rJfz" target= 
-                        "_blank" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Connect
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item nav" href="mailto:plumlexie@gmail.com?Subject=Hello%20Lexie">Contact Me</a>
-                          <a class="dropdown-item nav" href="https://www.instagram.com/makerlex" target="_blank">Instagram</a>
-                          <a class="dropdown-item nav" href="https://www.linkedin.com/in/lexie-helwig-96903382/" target="_blank">LinkedIn</a>
-                        </div>
-                      </li>
-                </ul>
-            </div>
+    <div class="wrapper">
+                    
+        <!-- Sidebar Nav -->
+        <div class="sidebar" id="mobile-nav">
             
-        </nav>
-    </header>
-   
-    <!-- Main Content -->
-    <!-- Greeting Pic & Profile Card -->
-    <div class="container container-fluid greeting">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-7">
-                <img src="images/lexie.jpg" class="figure-img img-fluid rounded-circle" alt= "picture of Lexie"/>
+            <!-- Logo -->
+            <a href="https://lexierobot.github.io"><img src="images/lexie logo.svg"></a>
+
+             <!-- Hamburger Icon -->
+             <button onclick="hamburgerNav()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="">
+                <div class="burger-icon">&#9776;</div>
+            </button>
+            
+            <!-- Links -->
+            <ul id="myLinks">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+
+        <!-- Main Content Cards -->
+        <div class="main" id="main">
+
+            <!-- Cards -->
+            <div class="card">
+                <div class="project">
+                    <img src="images/filler.jpg" alt="">
+                    <h1>Folio Item</h1>
+                    <h2>Subtitle</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima.</p>
+                        <br>
+                        <!-- View Project Social Icons -->
+                        <h3>View Project On:</h3><br>
+                        <a href="#"><img src="images/github.svg" alt="github" id="proj-info-icon"></a>
+                        <a href="#"><img src="images/github.svg" alt="github" id="proj-info-icon"></a>
+                        <!-- <a href="#" class="" id="proj-info-icon"><svg></svg></a> -->
+                </div>
             </div>
-            <div class ="col-lg-6 col-md-7 col-sm-5">
-                <h1>Hello!</h1>
-                <p class="text-sm-left text-md-left text-lg-left text-xl-left">I'm Lexie, a graphic designer and marketer located in the Augusta, GA area. I'm currently enrolled in a local bootcamp learning full-stack web development.</p>
-                <button type = "button" class="btn about" data-toggle="collapse" href="#aboutMe" aria-pressed="false">More About Me</button>
+
+            <div class="card">
+                <div class="project">
+                    <img src="https://static01.nyt.com/images/2017/08/02/arts/02ARTS2/02hamlet-item-1501599507149-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="">
+                    <h1>Folio Item</h1>
+                    <h2>Subtitle</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="project">
+                <img src="images/filler.jpg" alt="">
+                <h1>Folio Item</h1>
+                <h2>Subtitle</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="project">
+                <img src="images/filler.jpg" alt="">
+                <h1>Folio Item</h1>
+                <h2>Subtitle</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima.</p>
+                </div>
+            </div>
+
+            <div class="card" id="card">
+                <div class="project">
+                <img src="images/filler.jpg" alt="">
+                <h1>Folio Item</h1>
+                <h2>Subtitle</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusantium!</p>
+                </div>
+            </div>
+
+           <div class="card" id="card">
+                <div class="project">
+                <img src="images/filler.jpg" alt="">
+                <h1>Folio Item</h1>
+                <h2>Subtitle</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corrupti, dolorum velit hic consectetur id consequatur deserunt? Ad nemo vero tempore error pariatur cupiditate voluptates dolor unde, ipsam hic aliquam!</p>
+                </div>
             </div>
         </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy;2020 Lexie Helwig</p>
+        </div>
     </div>
-
-    <!-- About Me -->
-    <div class="container container-fluid about collapse" id="aboutMe">
-        <div class="row">
-          <div class="col">
-            <h1>About Me</h1>
-                <p>
-                I’m Lexie, a graphic designer and marketer located in the Augusta, GA area. I’m currently enrolled in a local bootcamp learning full-stack web development.
-                </p>
-                <p> 
-                I have always been a lover of art and design. As a child I cut clothing designs out of construction paper and got my first subscription to Vogue at 11. I watched HGTV and drew up interior design schemes for my childhood home. At school I loved English, Math, and Art.
-                </p>
-                <p>
-                I started college as an English major at Augusta University but ended with an Associate’s Degree in Design & Media Production Technology from Augusta Technical College. During that time I represented ATC at the 2012 Skills USA Competition, competing in the category of Advertising Design. I won the gold medal at both the state and national levels.
-                </p>
-                <p>
-                Since then I’ve worked as a Marketing Manager for two businesses in the Augusta area —first for a real estate agency and then for a flooring store. In these roles I created advertisements, generated new content including copywriting, managed Wordpress websites, created and monitoring Facebook and Google Ads, focused on generating leads, and much more.
-                </p>
-                <p>
-                While working at the flooring store I was given a unique opportunity to help my boss grow his startup idea: ICER Coolers. Together we designed, sourced, imported, and sold coolers in a physical retail location as well as on Amazon and our own e-commerce store. During this time I was not only the marketing manager — I worked in every role and even managed a small team of employees. It feels impossible to sum up everything I learned in 3.5 years of ICER in just a couple of paragraphs, but I liken it to earning a 4 year Bachelor’s Degree in business.
-                </p>
-                <p>
-                We sold ICER in 2019 and I then chose to enroll in a coding bootcamp to further my knowledge of web design & development.
-                </p>
-                </div>
-          </div>
-    </div>
-<!-- Main Content End -->
-
-    <footer>
-        <script type="text/javascript" src="path/to/instafeed.min.js"></script>
-
-        <div id="instafeed"></div> 
-
-        <!-- Bootstrap Javascript -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </footer>
     
+    <script src="grid.js"></script>
+    <script src="nav.js"></script>
 </body>
+
 </html>

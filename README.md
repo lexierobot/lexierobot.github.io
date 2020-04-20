@@ -10,3 +10,6 @@
 
 ### Feb 23 2020
 - Updated my Nav Bar & Logo
+
+### Apr 19 2020
+- Have completely changed this. Got rid of Bootstrap and built with Grid. will have to add JS to get tiles to align correctly on Portfolio page.
