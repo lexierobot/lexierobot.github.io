@@ -59,6 +59,18 @@ p::selection {
     float: left;
 }
 
+/* .sidebar {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    overflow: auto;
+} */
+
 .sidebar ul {
     list-style: none;
     align-items: center;
@@ -87,7 +99,8 @@ li a:hover {
 .main {
     background-color: #fff;
     display: grid;
-    grid-template-rows: auto max-content;
+    /* grid-template-rows: auto max-content; */
+    grid-auto-rows: max-content;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
     grid-gap: 1em;
 }
@@ -96,8 +109,9 @@ li a:hover {
     padding: 2em;
     width: 100%;
     height: max-content;
-    grid-auto-flow: dense;
-    grid-auto-rows: max-content;
+    grid-auto-rows: 0;
+    /* grid-auto-flow: dense; */
+    /* grid-auto-rows: max-content; */;
 }
 
 .card img {
@@ -216,6 +230,7 @@ li a:hover {
 
     .main {
         grid-column: 1/5;
+        /* grid-column: 1fr 1fr; */
     }
 
     .card {
