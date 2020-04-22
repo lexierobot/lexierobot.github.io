@@ -131,18 +131,21 @@ body::selection {
       width: 100%;
     }
     
-    .project button{
-      float: left;
+    .project .button{
+      text-decoration: none;
+      text-align: center;
       width: 150px;
       background-color: #C28B97;
       color: #f9f9f9;
+      font-family: "Roboto", sans-serif;
+      font-size: 1em;
       text-transform: uppercase;
-      font-size: 10px;
       font-weight: 600;
       padding: 15px;
+      border: 1px solid #C28B97;
     }
     
-    .project button:hover{
+    .project .button:hover{
       background-color: #f9f9f9;
       color: #C28B97;
       border: 1px solid #C28B97;
