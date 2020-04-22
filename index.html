@@ -3,108 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lexie Helwig</title>
+    <title>Lexie Helwig - Developer, Designer, Marketer</title>
 
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="wrapper">
-                    
-        <!-- Sidebar Nav -->
-        <div class="sidebar" id="mobile-nav">
-            
-            <!-- Logo -->
-            <a href="https://lexierobot.github.io"><img src="images/lexie logo.svg"></a>
-
-             <!-- Hamburger Icon -->
-             <button onclick="hamburgerNav()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="">
-                <div class="burger-icon">&#9776;</div>
-            </button>
-            
-            <!-- Links -->
-            <ul id="myLinks">
-                <li><a href="index.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <div class="container">
+        <div class="header">
+          <div class="heading">
+            I'm Lexie.<br>
+            <span class="i">Designer,<br>
+            developer, <br>
+              marketer.</span>
+          </div>
+          <img src="images/lexie.jpg" alt="Lexie" width="225px">
+          <div class="nav">
+            <ul>
+              <li><a href="https://github.com/lexierobot" target="_blank">Github</a></li>
+              <li><a href="https://codepen.io/lexierobot" target="_blank">Codepen</a></li>
+              <li><a href="https://www.linkedin.com/in/lexiehelwig/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://drive.google.com/file/d/1UriAip1Z0mVkaJABwln7gzb-I3Ya9bxY/view?usp=sharing" target="_blank">Resume.pdf</a></li>
+              <li><a href="https://www.instagram.com/makerlex/" target="_blank">Instagram</a></li>
+              <li><a href="mailto:plumlexie@gmail.com?Subject=Portfolio%20site%20contact" target="_top" target="_blank">Email</a></li>
+              <li><a href="#" class="dark-mode" id="dark-mode" aria-label="toggle dark mode">🌚</a></li>
             </ul>
+          </div>
         </div>
         
-
-        <!-- Main Content Cards -->
-        <div class="main" id="main">
-
-            <!-- Cards -->
-            <div class="card">
-                <div class="project">
-                    <img src="images/filler.jpg" alt="">
-                    <h1>Folio Item</h1>
-                    <h2>Subtitle</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima.</p>
-                        <!-- <br> -->
-                        <!-- View Project Social Icons -->
-                        <!-- <h3>View Project On:</h3><br>
-                        <a href="#"><img src="images/github.svg" alt="github" id="proj-info-icon"></a>
-                        <a href="#"><img src="images/github.svg" alt="github" id="proj-info-icon"></a> -->
-                        <!-- <a href="#" class="" id="proj-info-icon"><svg></svg></a> -->
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="project">
-                    <img src="images/filler.jpg" alt="">
-                    <h1>Folio Item</h1>
-                    <h2>Subtitle</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="project">
-                <img src="images/filler.jpg" alt="">
-                <h1>Folio Item</h1>
-                <h2>Subtitle</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="project">
-                <img src="images/filler.jpg" alt="">
-                <h1>Folio Item</h1>
-                <h2>Subtitle</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima.</p>
-                </div>
-            </div>
-
-            <div class="card" id="card">
-                <div class="project">
-                <img src="images/filler.jpg" alt="">
-                <h1>Folio Item</h1>
-                <h2>Subtitle</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima.</p>
-                </div>
-            </div>
-
-           <div class="card" id="card">
-                <div class="project">
-                <img src="images/filler.jpg" alt="">
-                <h1>Folio Item</h1>
-                <h2>Subtitle</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima.</p>
-                </div>
-            </div>
+        <div class="portfolio">
+            <button class="accordion lora">01 ...  Project: Description of Project</button>
+            <div class="project proj-holder">
+            <img src="https://www.reproduction-gallery.com/catalogue/uploads/1471930346_large-image_jackson-pollock-number-17a-lg.jpg" alt="Pollock">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima. Ispum sit consect elit adipis dol orsit quo resin maxim sicing.</p>
+            <button>See Project</button>
+          </div>
+          
+          <button class="accordion lora">02 ...  Project: Description of Project</button>
+          <div class="project proj-holder">
+            <img src="https://www.reproduction-gallery.com/catalogue/uploads/1471930346_large-image_jackson-pollock-number-17a-lg.jpg" alt="Pollock">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima. Ispum sit consect elit adipis dol orsit quo resin maxim sicing.</p>
+            <button>See Project</button>
+          </div>
+          
+          <button class="accordion lora">03 ...  Project: Description of Project</button>
+          <div class="project proj-holder">
+          <img src="https://www.reproduction-gallery.com/catalogue/uploads/1471930346_large-image_jackson-pollock-number-17a-lg.jpg" alt="Pollock">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima. Ispum sit consect elit adipis dol orsit quo resin maxim sicing.</p>
+            <button>See Project</button>
+          </div>
+          
+          <button class="accordion lora">04 ...  Project: Description of Project</button>
+          <div class="project proj-holder">
+          <img src="https://www.reproduction-gallery.com/catalogue/uploads/1471930346_large-image_jackson-pollock-number-17a-lg.jpg" alt="Pollock">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima. Ispum sit consect elit adipis dol orsit quo resin maxim sicing.</p>
+            <button>See Project</button>
+          </div>
+          
+          <button class="accordion lora">05 ...  Project: Description of Project</button>
+          <div class="project proj-holder">
+          <img src="https://www.reproduction-gallery.com/catalogue/uploads/1471930346_large-image_jackson-pollock-number-17a-lg.jpg" alt="Pollock">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sint rerum minima. Ispum sit consect elit adipis dol orsit quo resin maxim sicing.</p>
+            <button>See Project</button>
+          </div>
         </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy;2020 Lexie Helwig</p>
-        </div>
-    </div>
-
-    <script src="nav.js"></script>
+       
+      </div>
+       <footer>&copy;2020 Lexie Helwig</footer>
+       <script src="app.js"></script>
+       <script src="darkmode.js"></script>
 </body>
-
 </html>
