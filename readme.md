@@ -35,7 +35,7 @@ ___
 ![](screenshots/3figmabranding.png)
 
 ### Figma Mockups: 
-![](screenshots/3figma.png)<br>
+![](screenshots/3%20figma.png)
 
 ### Screenshots:
 ![](screenshots/3%20portfolio.png)
