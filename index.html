@@ -9,13 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- <body class="dark"> -->
     <div class="container">
         <div class="header">
           <div class="heading">
             I'm Lexie.<br>
             <span class="i">Designer,<br>
             developer, <br>
-              marketer.</span>
+            marketer.</span>
           </div>
           <img src="images/lexie.jpg" alt="Lexie" width="225px">
           <div class="nav">
@@ -26,7 +27,11 @@
               <li><a href="https://drive.google.com/file/d/1UriAip1Z0mVkaJABwln7gzb-I3Ya9bxY/view?usp=sharing" target="_blank">Resume.pdf</a></li>
               <li><a href="https://www.instagram.com/makerlex/" target="_blank">Instagram</a></li>
               <li><a href="mailto:plumlexie@gmail.com?Subject=Portfolio%20site%20contact" target="_top" target="_blank">Email</a></li>
-              <li><a href="#" class="dark-mode" id="dark-mode" aria-label="toggle dark mode">🌚</a></li>
+              <!--       Add checkbox for dark toggle         -->
+              <!-- <li><input type="checkbox" class="checkbox" id="chk" 
+              aria-label="toggle dark mode"/>
+                <label class="label" for="chk">🌚</label></li> -->
+                <li><button onclick="darkMode()" id="chk">🌚</button></li>
             </ul>
           </div>
         </div>

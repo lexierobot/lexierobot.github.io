@@ -1,15 +1,56 @@
-/* Change this in dark/light mode */
-body::selection {
-    /*   background: #BD7E5C;  orange*/
-    /*   background: #C28B97; purple*/
-      background: #222;
-      color: #f9f9f9;
-    }
+/* Dark Mode Styling */
+body.dark{
+  background: #222;
+}
+body.dark .container{
+  background: #222;
+  color: #f9f9f9;
+}
+
+body.dark .heading{
+  color: #f9f9f9;
+}
+
+body.dark .nav li{
+  border-left: 1px solid #f9f9f9;
+}
+
+body.dark .nav a{
+  color: #f9f9f9;
+}
+
+body.dark .nav a:hover{
+  color: #C28B97;
+}
+
+body.dark button {
+  background: #222;
+  color: #f9f9f9;
+}
+
+body.dark .project {
+  background: #222;
+}
+
+body.dark .accordion {
+  border-bottom: 1px solid #f9f9f9;
+}
+
+body.dark footer {
+  color: #f9f9f9;
+}
+
+/* Regular Styling */
+
+  body{
+    transition: 0.4s;
+  }
     
     .container{
       background: #f9f9f9;
       max-width: 1000px;
       margin: 0 auto;
+      transition: 0.4s;
     }
     
     .header{
@@ -54,10 +95,14 @@ body::selection {
     
     .nav a:hover{
       color: #C28B97;
+      transition: 0.4s;
     }
 
-    #dark-mode{
-      
+    .nav button{
+      background: none;
+      padding-left: 0;
+      font-size: 1em;
+      cursor: pointer;
     }
     
     .portfolio {
@@ -115,6 +160,7 @@ body::selection {
       overflow: hidden;
       transition: max-height 0.2s ease-out;
       margin-bottom: 30px;
+      transition: 0.4s
     }
 
     .project-holder {
@@ -152,6 +198,7 @@ body::selection {
     }
     
     footer{
+      font-family: 'Playfair Display', serif;
       margin: 2em auto;
       text-align: center;
     }
@@ -228,12 +275,3 @@ body::selection {
         font-size: 1em;
       }
     }
-
-    .dark-mode{
-
-    }
-
-    #dark-mode {
-      background: transparent;
-    }
-
