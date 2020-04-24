@@ -1,4 +1,9 @@
 /* Dark Mode Styling */
+.dark ::selection{
+  background: #f9f9f9;
+  color: #222;
+}
+
 body.dark{
   background: #222;
 }
@@ -48,6 +53,11 @@ body.dark footer {
 
   body{
     transition: 0.4s;
+  }
+
+  ::selection{
+    background: #222;
+    color: #f9f9f9;
   }
     
     .container{
