@@ -1,5 +1,5 @@
 # lexierobot.github.io
-##Personal Portfolio Website
+## Personal Portfolio Website
 -Built over the course of coding bootcamp (12 weeks)
 
 ___
