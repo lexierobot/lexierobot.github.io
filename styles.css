@@ -41,6 +41,10 @@ body.dark .project {
   background: #222;
 }
 
+body.dark .project a:hover{
+  color: #f9f9f9;
+}
+
 body.dark .accordion {
   border-bottom: 1px solid #f9f9f9;
 }
@@ -179,10 +183,6 @@ body.dark footer {
       margin-bottom: 30px;
       transition: 0.4s
     }
-
-    .project-holder {
-      height: max-content;
-    }
     
     .project p{
       font-family: "Roboto", sans-serif;
@@ -192,6 +192,7 @@ body.dark footer {
       grid-column: 1fr;
       margin-bottom: 1em;
       width: 100%;
+      padding: 0;
     }
     
     .project .button{
@@ -212,6 +213,16 @@ body.dark footer {
       background-color: #f9f9f9;
       color: #C28B97;
       border: 1px solid #C28B97;
+    }
+
+    .project a{
+      text-decoration: none;
+      color: #C28B97;
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .project a:hover{
+      color: #222;
     }
     
     footer{
