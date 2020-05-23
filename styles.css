@@ -261,6 +261,10 @@ body.dark footer {
         margin: 0 auto;
         padding: 1em;
       }
+
+      .project ul{
+        font-family: "Roboto", sans-serif;
+      }
       
       .accordion{
         font-size: 1.3em;
