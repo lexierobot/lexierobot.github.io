@@ -231,10 +231,20 @@ body.dark footer {
       text-align: center;
     }
 
+    /* Align Logo & Video Sections Center */
+    .center {
+      text-align: center;
+    }
+
     /* Logo-Design */
     #logo-design{
       width: 30%;
       padding: 5px;
+      
+    }
+
+    /* After Effects Animation */
+    #aftereffects{
     }
     
     @media screen and (max-width: 785px){
