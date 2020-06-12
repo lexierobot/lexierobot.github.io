@@ -174,14 +174,14 @@ body.dark footer {
     }
     
     .project {
-      display: grid;
       padding-top: 1em;
       background-color: #f9f9f9;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
-      margin-bottom: 30px;
-      transition: 0.4s
+      margin-bottom: 1em;
+      transition: 0.4s;
+      padding-bottom: 1em;
     }
     
     .project p{
@@ -189,13 +189,13 @@ body.dark footer {
     }
     
     .project img{
-      grid-column: 1fr;
       margin-bottom: 1em;
       width: 100%;
-      padding: 0;
+      padding-top: 2em;
     }
     
     .project .button{
+      display: block;
       text-decoration: none;
       text-align: center;
       width: 150px;
@@ -229,6 +229,12 @@ body.dark footer {
       font-family: 'Playfair Display', serif;
       margin: 2em auto;
       text-align: center;
+    }
+
+    /* Logo-Design */
+    #logo-design{
+      width: 30%;
+      padding: 5px;
     }
     
     @media screen and (max-width: 785px){
