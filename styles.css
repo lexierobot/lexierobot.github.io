@@ -26,6 +26,7 @@ body.dark .nav a{
 
 body.dark .nav a:hover{
   color: #C28B97;
+
 }
 
 body.dark #chk {
@@ -42,7 +43,8 @@ body.dark .project {
 }
 
 body.dark .project a:hover{
-  color: #f9f9f9;
+  background-color: #f9f9f9;
+  color: #C28B97;
 }
 
 body.dark .accordion {
